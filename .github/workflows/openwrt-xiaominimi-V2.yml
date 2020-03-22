@@ -173,7 +173,7 @@ jobs:
 
           # 常用软件包:
           cat >> .config <<EOF
-          CONFIG_PACKAGE_softethervpn-base=y
+          # CONFIG_PACKAGE_softethervpn-base=y
           # CONFIG_PACKAGE_softethervpn-bridge=y
           CONFIG_PACKAGE_softethervpn5-bridge=y
           CONFIG_PACKAGE_softethervpn5-client=y
