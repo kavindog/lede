@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: OpenWrt-xiaomimini-V2，增加softether
+name: OpenWrt-xiaomimini-V3，增加softether,取消softether-client
 
 on:
   push:
@@ -161,7 +161,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-webadmin=y
           # CONFIG_PACKAGE_luci-app-wireguard=y
           CONFIG_PACKAGE_luci-app-softethervpn=y
-          # CONFIG_PACKAGE_luci-i18n-softethervpn-zh-cn=y
+          CONFIG_PACKAGE_luci-i18n-softethervpn-zh-cn=y
           
           EOF
 
@@ -176,8 +176,8 @@ jobs:
           # CONFIG_PACKAGE_softethervpn-base=y
           # CONFIG_PACKAGE_softethervpn-bridge=y
           CONFIG_PACKAGE_softethervpn5-bridge=y
-          CONFIG_PACKAGE_softethervpn5-client=y
-          CONFIG_PACKAGE_softethervpn5-libs=y
+          # CONFIG_PACKAGE_softethervpn5-client=y
+          # CONFIG_PACKAGE_softethervpn5-libs=y
           # CONFIG_PACKAGE_curl=y
           # CONFIG_PACKAGE_htop=y
           # CONFIG_PACKAGE_nano=y
